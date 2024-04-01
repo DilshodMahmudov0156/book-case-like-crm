@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: #e6ded3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url("./images/bg.png");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.my-btn{
+    padding: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-body{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+    outline: 1px solid #6200ee;
+}
+.my-card{
+    background-color: #ffffff;
+    border-radius: 12px;
+    background-color: #FEFEFE;
+    padding: 48px 28px;
+}
+.login-btn{
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 16px;
+    background: none;
+    border: 1px solid #151515;
+    border-radius: 4px;
+}
+.form-btn-span{
+    margin-right: 20px;
+}
+.border-div{
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #24272C;
+}
+.btn-between-borders{
+    margin: 0px 20px;
+}
+.submit-btn{
+    width: 100%;
+    color: #FEFEFE;
+    padding: 10px 0px;
+    background-color: #6200ee;
+    border-radius: 4px;
+    border: none;
+    margin-top: 35px;
 }
