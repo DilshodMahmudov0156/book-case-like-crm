@@ -1,13 +1,24 @@
 {
   "books": [
     {
-      "id": "54a5495d-1de7-4b0b-af92-e8c3484ea0dc",
-      "name": "fsdfsdfsdf",
-      "cover": "fgsdfgsg",
-      "pages": "46546",
-      "published": "45465",
-      "isbn": "46564556",
-      "author": "gfsgsfgsfg",
+      "id": "1",
+      "name": "Raspberry Pi User Guide",
+      "cover": "http://url.to.book.cover",
+      "pages": "221",
+      "published": "2012",
+      "isbn": "9781118464465",
+      "author": "Eben Upton",
+      "userId": "1",
+      "userEmail": "Felix IT solitions"
+    },
+    {
+      "id": "236baf66-3bac-44ae-8f77-c7e2d0f28efd",
+      "name": "My Story",
+      "cover": "https://my-story.com/book",
+      "pages": "210",
+      "published": "2024",
+      "isbn": "1541265432156",
+      "author": "Dilshod Mahmudov",
       "userId": "YyKYpZ1nnCMisLSkY683LdoPRQ83",
       "userEmail": "dilshodjonmahmudov30@gmail.com"
     }

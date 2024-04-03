@@ -27,7 +27,7 @@ function NavBar() {
                                 localStorage.clear();
                                 window.location.reload();
                             }}>
-                                LogOut
+                                <i className="bi bi-box-arrow-left"></i> LogOut
                             </button>
                             <button className="notify-icon">
                                 <i className="bi bi-bell"></i>
@@ -38,9 +38,9 @@ function NavBar() {
                             </Link>
                         </div>
                         :
-                        <button className="btn btn-secondary">
-                            login
-                        </button>
+                        <Link to="/login" className="btn btn-secondary">
+                            login <i className="bi bi-person-plus"></i>
+                        </Link>
                 }
 
             </div>
