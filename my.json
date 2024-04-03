@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": "54a5495d-1de7-4b0b-af92-e8c3484ea0dc",
+      "name": "fsdfsdfsdf",
+      "cover": "fgsdfgsg",
+      "pages": "46546",
+      "published": "45465",
+      "isbn": "46564556",
+      "author": "gfsgsfgsfg",
+      "userId": "YyKYpZ1nnCMisLSkY683LdoPRQ83",
+      "userEmail": "dilshodjonmahmudov30@gmail.com"
+    }
+  ],
+  "users": []
+}

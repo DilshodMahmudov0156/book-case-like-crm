@@ -10,12 +10,9 @@ function LoginPage() {
             .then((result) => {
                 const user = result.user;
                 console.log(user);
-                const userObj = {
-                    email: user.email,
-                    id: user.uid,
-                    photo: user.photoURL
-                }
-                localStorage.setItem("loggedBy", userObj);
+                localStorage.setItem("userPhoto", user.photoURL);
+                localStorage.setItem("userEmail", user.email);
+                localStorage.setItem("userId", user.uid);
                 navigate("/profile");
             })
             .catch((err) => {

@@ -1,7 +1,12 @@
 import React from 'react';
 import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
+
+    const userId = localStorage.getItem("userId");
+    const photo = localStorage.getItem("userPhoto");
+
     return (
         <nav>
             <div className="my-container d-flex justify-content-between">
@@ -15,15 +20,29 @@ function NavBar() {
                     </div>
                 </div>
 
-                <div className="d-flex alig-tems-center">
-                    <button className="notify-icon">
-                        <i className="bi bi-bell"></i>
-                        <div className="notify-point"></div>
-                    </button>
-                    <div className="profile-image">
-                        <img src="" alt=""/>
-                    </div>
-                </div>
+                {
+                    userId?
+                        <div className="d-flex align-items-center">
+                            <button className="btn btn-secondary mx-3" onClick={() => {
+                                localStorage.clear();
+                                window.location.reload();
+                            }}>
+                                LogOut
+                            </button>
+                            <button className="notify-icon">
+                                <i className="bi bi-bell"></i>
+                                <div className="notify-point"></div>
+                            </button>
+                            <Link to="/profile" className="profile-image">
+                                <img src={photo} alt=""/>
+                            </Link>
+                        </div>
+                        :
+                        <button className="btn btn-secondary">
+                            login
+                        </button>
+                }
+
             </div>
         </nav>
     );

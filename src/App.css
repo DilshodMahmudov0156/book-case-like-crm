@@ -32,8 +32,8 @@ h1{
     height: auto;
 }
 .my-content{
-    overflow: auto;
-    height: 655px;
+    overflow-y: scroll;
+    height: 700px;
     /*border: 1px solid white;*/
 }
 .my-content::-webkit-scrollbar{
@@ -143,7 +143,7 @@ nav{
 .notify-icon{
     background: none;
     border: none;
-    font-size: 22px;
+    font-size: 25px;
     position: relative;
 }
 .notify-point{
@@ -153,16 +153,21 @@ nav{
     border: 2px solid #FEFEFE;
     border-radius: 5px;
     position: absolute;
-    top: 13px;
-    right: 0px;
+    top: 11px;
+    right: 2px;
 }
 .profile-image{
-     width: 40px;
-     height: 40px;
-     border: 2px solid #FD648E;
-     border-radius: 50%;
-     margin-left: 30px;
+    width: 43px;
+    height: 43px;
+    border: 3px solid #d13ae0;
+    border-radius: 50%;
+    margin-left: 30px;
+    overflow: hidden;
  }
+.profile-image img{
+    width: 100%;
+    height: auto;
+}
 .header-text{
     font-size: 36px;
     font-weight: 700;
@@ -184,6 +189,9 @@ nav{
     border: none;
     border-radius: 4px;
 }
+.card-out{
+    padding: 25px;
+}
 
 .book-card{
     width: 100%;
@@ -191,4 +199,68 @@ nav{
     background-color: #FEFEFE;
     padding: 32px;
     border-radius: 12px;
+}
+.my-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.49);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.my-row{
+    height: 100vh;
+}
+.my-modal-content{
+    width: 100%;
+    height: auto;
+    padding: 24px 28px;
+    border-radius: 12px;
+    background-color: #FEFEFE;
+    display: block;
+}
+.modal-text{
+    font-size: 20px;
+    color: #151515;
+    font-weight: 600;
+}
+.my-modal-content b{
+    font-size: 14px;
+    color: #151515;
+}
+.close-btn{
+    background: none;
+    font-size: 20px;
+    border: none;
+}
+.submiter-btn{
+    width: 50%;
+    height: auto;
+    font-weight: 500;
+    padding: 10px 24px;
+    margin-left: 15px;
+    color: #FEFEFE;
+    background-color: #6200EE;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.cancel-btn{
+    width: 50%;
+    height: auto;
+    font-weight: 500;
+    color: #6200EE;
+    background: none;
+    border: 1px solid #6200EE;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.submiter-btn:hover{
+    opacity: 0.8;
+}
+.cancel-btn:hover{
+    background-color: rgba(98, 0, 238, 0.71);
+    color: white;
 }
