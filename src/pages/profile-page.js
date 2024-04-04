@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import NavBar from "../components/nav-bar";
 import Card from "../components/card";
 
-function ProfilePage({ profile, makeShow, data, deleter, showUpdater, updateItem }) {
+function ProfilePage({ profile, makeShow, data, deleter, showUpdater }) {
     const userId = localStorage.getItem("userId");
 
     return (

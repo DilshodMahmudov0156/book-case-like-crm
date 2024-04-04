@@ -24,8 +24,8 @@ function Card({ profile, book, deleter, showUpdater }) {
                             </button>
                             <button
                                 className="btn-bottom"
-                                onClick={(e) => {
-                                showUpdater(e, "show", book)
+                                onClick={() => {
+                                showUpdater("show", book)
                             }}>
                                 <i className="bi bi-pencil-square"></i>
                             </button>

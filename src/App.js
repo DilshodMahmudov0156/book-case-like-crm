@@ -15,8 +15,7 @@ function App() {
     const [myData, setMyData] = useState([]);
     const [show, setShow] = useState(false);
     const [showUpdaterModal, setShowUpdaterModal] = useState(false);
-    const [updateItem, setUpdateItem] = useState();
-    const [objId, setObjId] = useState(null)
+    const [updateItem, setUpdateItem] = useState(null);
     const userEmail = localStorage.getItem("userEmail");
     const userId = localStorage.getItem("userId");
 
@@ -31,11 +30,10 @@ function App() {
         }
     }
 
-    const showUpdater = (e, text, obj) => {
-        e.preventDefault();
+    const showUpdater = (text, obj) => {
         if (text === "show"){
             setShowUpdaterModal(true);
-            setObjId(obj.id);
+            setUpdateItem({...obj});
         }
         else if(text === "hide"){
             setShowUpdaterModal(false);
@@ -78,18 +76,24 @@ function App() {
         })
         window.location.reload();
     }
+    const dater = () => {
+        console.log(updateItem);
+    }
 
-    const updater = (e, obj) => {
-        fetch(`http://localhost:3000/books/${updateItem.id}`, {
+    const updater = async (e, obj) => {
+        e.preventDefault();
+        await fetch(`http://localhost:3000/books/${updateItem.id}`, {
             method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(obj)
         })
+        window.location.reload();
     }
     return (
         <div className='app'>
+            {show? <MyModal makeShow={makeShow} poster={poster}/> : null}
+            {showUpdaterModal? <UpdaterModal showUpdater={showUpdater} updateItem={updateItem} updater={updater}/>: null}
             <Router>
-                {show? <MyModal makeShow={makeShow} poster={poster}/> : null}
-                {showUpdaterModal? <UpdaterModal updater={updater} showUpdater={showUpdater} updateItem={updateItem}/>: null}
                 <Routes>
                     <Route path="/" element={<HomePage makeShow={makeShow} data={data}/>}/>
                     <Route path="/login" element={<LoginPage/>}/>
