@@ -43,15 +43,15 @@ function UpdaterModal({ showUpdater, updater, updateItem }) {
                                 setCover(e.target.value)
                             }}/>
                             <b className="mt-2">Quantity of pages:</b>
-                            <input type="text" value={pages} onChange={(e) => {
+                            <input type="number" value={pages} onChange={(e) => {
                                 setPages(e.target.value)
                             }}/>
                             <b className="mt-2">Published year:</b>
-                            <input type="text" value={published} onChange={(e) => {
+                            <input type="number" value={published} onChange={(e) => {
                                 setPublished(e.target.value)
                             }}/>
                             <b className="mt-2">ISBN</b>
-                            <input type="text" value={isbn} onChange={(e) => {
+                            <input type="number" value={isbn} onChange={(e) => {
                                 setIsbn(e.target.value)
                             }}/>
                             <b className="mt-2">Author name:</b>

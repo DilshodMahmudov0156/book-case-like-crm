@@ -2,6 +2,7 @@ import React from 'react';
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 
+
 function NavBar() {
 
     const userId = localStorage.getItem("userId");
@@ -23,13 +24,15 @@ function NavBar() {
                 {
                     userId?
                         <div className="d-flex align-items-center">
-                            <button className="btn btn-secondary mx-3" onClick={() => {
+                            <Link to="/" className="text-light btn btn-outline-secondary d-inline-block"><i
+                                className="bi bi-house-door"></i> Home</Link>
+                            <button className="btn btn-secondary mx-2" onClick={() => {
                                 localStorage.clear();
                                 window.location.reload();
                             }}>
                                 <i className="bi bi-box-arrow-left"></i> LogOut
                             </button>
-                            <button className="notify-icon">
+                            <button className="notify-icon mx-2">
                                 <i className="bi bi-bell"></i>
                                 <div className="notify-point"></div>
                             </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../positon.css";
 
-function Card({ profile, book, deleter, showUpdater }) {
+function Card({ profile, book, openDelete, showUpdater }) {
     return (
         <div className="col-xl-4 card-out" key={book.id}>
             <div className="book-card shadow-lg">
@@ -18,7 +18,7 @@ function Card({ profile, book, deleter, showUpdater }) {
                     profile ?
                         <div className="edit-delete">
                             <button className="btn-top" onClick={() => {
-                                deleter(book.id)
+                                openDelete("open", book);
                             }}>
                                 <i className="bi bi-trash"></i>
                             </button>

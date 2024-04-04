@@ -42,15 +42,15 @@
       "userEmail": "dilshodjonmahmudov30@gmail.com"
     },
     {
-      "id": "ae91ee40-f5b6-41c1-88f7-ab8ec65a11b4",
-      "name": "Book about life",
-      "cover": "https://life.com/book",
-      "pages": "145",
-      "published": "2022",
-      "isbn": "45645133121",
-      "author": "Dilshod Mahmudov",
-      "userId": "eKf2YBqUeSRlAqBvVj5mCaI1IlH3",
-      "userEmail": "dilshodpublic0156@gmail.com"
+      "id": "a862d4a1-c02d-4b64-a889-18ad7b72d30f",
+      "name": "Interesting book",
+      "cover": "https://interesting.com/",
+      "pages": "158",
+      "published": "2024",
+      "isbn": "5465132654",
+      "author": "John Doe",
+      "userId": "YyKYpZ1nnCMisLSkY683LdoPRQ83",
+      "userEmail": "dilshodjonmahmudov30@gmail.com"
     }
   ],
   "users": []

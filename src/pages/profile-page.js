@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import NavBar from "../components/nav-bar";
 import Card from "../components/card";
 
-function ProfilePage({ profile, makeShow, data, deleter, showUpdater }) {
+function ProfilePage({ profile, makeShow, data, openDelete, showUpdater }) {
     const userId = localStorage.getItem("userId");
 
     return (
@@ -21,7 +21,7 @@ function ProfilePage({ profile, makeShow, data, deleter, showUpdater }) {
                 <div className="row px-4">
                     {
                         data.map(item => (
-                            <Card profile={profile} book={item} deleter={deleter} showUpdater={showUpdater}/>
+                            <Card profile={profile} book={item} openDelete={openDelete} showUpdater={showUpdater}/>
                         ))
                     }
                 </div>
