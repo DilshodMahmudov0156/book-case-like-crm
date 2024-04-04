@@ -13,7 +13,7 @@ function DeleteModal({openDelete, deleter}) {
                             </button>
                         </d>
                         <div className="d-flex mt-3">
-                            <button className="cancel-btn" onClick={() => {openDelete("close")}}>Close</button>
+                            <button className="cancel-btn" onClick={() => {openDelete("close")}}>Cancel</button>
                             <button className="submiter-btn" onClick={deleter}>Delete</button>
                         </div>
                     </div>

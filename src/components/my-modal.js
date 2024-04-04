@@ -33,7 +33,7 @@ function MyModal({makeShow, poster}) {
                         <b className="mt-1 d-block">Author:</b>
                         <input type="text" placeholder="Who did make it?" className="" onChange={(e) => {setAuthor(e.target.value)}}/>
                         <div className="d-flex justify-content-between mt-3">
-                            <button className="cancel-btn"  onClick={(e) => {makeShow(e, "hide")}}>Close</button>
+                            <button className="cancel-btn"  onClick={(e) => {makeShow(e, "hide")}}>Cancel</button>
                             <button
                                 className="submiter-btn"
                                 type="submit"
@@ -47,7 +47,7 @@ function MyModal({makeShow, poster}) {
                                         author: author
                                     })
                                 }}>
-                                Submit
+                                Create
                             </button>
                         </div>
                     </form>

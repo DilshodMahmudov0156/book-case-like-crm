@@ -61,10 +61,10 @@ function UpdaterModal({ showUpdater, updater, updateItem }) {
                             <div className="d-flex justify-content-between mt-3">
                                 <button className="cancel-btn" onClick={() => {
                                     showUpdater("hide")
-                                }}>Close
+                                }}>Cancel
                                 </button>
                                 <button className="submiter-btn">
-                                    Submit
+                                    Change
                                 </button>
                             </div>
                         </form>

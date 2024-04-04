@@ -20,24 +20,13 @@
         "isbn": "1546546876545",
         "author": "Somebody that I used to know"
       },
-      "name": "Some Story",
-      "cover": "https::/some-story/book",
+      "name": "Some Story for children",
+      "cover": "https://some-story/book",
       "pages": "201",
       "published": "2023",
       "isbn": "1546546876545",
       "author": "Somebody",
       "id": "849946cc-5dac-466b-ba35-bfc0c9c59f38",
-      "userId": "YyKYpZ1nnCMisLSkY683LdoPRQ83",
-      "userEmail": "dilshodjonmahmudov30@gmail.com"
-    },
-    {
-      "id": "6b61a838-9eb8-496e-8c95-96df03fb6f49",
-      "name": "book",
-      "cover": "https://book.com/book",
-      "pages": "122",
-      "published": "2024",
-      "isbn": "4665161",
-      "author": "somebody",
       "userId": "YyKYpZ1nnCMisLSkY683LdoPRQ83",
       "userEmail": "dilshodjonmahmudov30@gmail.com"
     },
